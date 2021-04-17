@@ -44,13 +44,13 @@ for the testing of Buggy Car Ratings I have used the following attributes:
 
 For this use case I have made use of the testing quadrant and test pyramid, I have break the automation in two projects, one project focus in integration testing validating the API, and the other testing focus at UI or functional level, testing user interactions, since UI test tends to add more cost and maintenance effort, is always a good practice to cover critical functionalities at integration level and use UI automation as functional testing support. 
 
-Automation projects can be found: 
+##### 3.2 Automation projects can be found: 
  
 - **[Integration Test](https://github.com/rafcasto/WespacIntegrationTest)**
 - **[UI Test](https://github.com/rafcasto/WestpacUITest)**     
 
 > Note: <br/>
-> Set up instructions can be found on each project 
+> Setup instructions can be found on each project 
 
 #### 4. CI pipeline
 
@@ -66,4 +66,15 @@ Jenkins pipelines have been set up for each regression project
 
 ##### 4.1 Reporting
 
-1. *[Integration Test Report]()* 
+1. *[Integration Test Report](https://github.com/rafcasto/WestPacConsolidateInterview/tree/master/assests/IntegrationTestReport)* 
+1. *[UI Test Report](https://github.com/rafcasto/WestPacConsolidateInterview/tree/master/assests/UITestReport)*
+
+ ###### 4.1.1 Trend Reports
+  
+ ###### UI Test jenkins trend report
+  
+ ![!](assests/UITestTrendReport.JPG "ACC MATRIX DASHBOARD")
+ 
+ ###### Integration Test jenkins trend report
+    
+ ![!](assests/IntegrationTestTrendReport.JPG "ACC MATRIX DASHBOARD")
