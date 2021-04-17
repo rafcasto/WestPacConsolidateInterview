@@ -1,0 +1,1012 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User Register",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 264000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2480000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Get a 201 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:04:20.571Z",
+        "line": 13,
+        "name": "User can login to buggy cars website",
+        "description": "",
+        "id": "login;user-can-login-to-buggy-cars-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 338000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User Login to Buggy cars api",
+            "match": {
+              "location": "steps.LoginSteps.userLoginToBuggyCarsApi()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User receives a 200 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.LoginSteps.userReceivesAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User Register",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 324000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Get a 201 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:04:24.194Z",
+        "line": 17,
+        "name": "User can not login to buggy cars website with wrong password",
+        "description": "",
+        "id": "login;user-can-not-login-to-buggy-cars-website-with-wrong-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User provides login details",
+            "match": {
+              "location": "steps.LoginSteps.userLoginToBuggyCarsApiWith(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "R4f43lC1988%%"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User Login to Buggy cars api",
+            "match": {
+              "location": "steps.LoginSteps.userLoginToBuggyCarsApi()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User receives a 400 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.LoginSteps.userReceivesAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User Register",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 381000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Get a 201 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:04:24.696Z",
+        "line": 24,
+        "name": "User can not login to buggy cars website with wrong username",
+        "description": "",
+        "id": "login;user-can-not-login-to-buggy-cars-website-with-wrong-username",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User provides login details",
+            "match": {
+              "location": "steps.LoginSteps.userLoginToBuggyCarsApiWith(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto_invalid"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 278000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User Login to Buggy cars api",
+            "match": {
+              "location": "steps.LoginSteps.userLoginToBuggyCarsApi()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User receives a 401 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.LoginSteps.userReceivesAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As a User\n  I want a login component\n  So that I can access my profile details",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "classpath:features/LoginFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-17T09:04:25.374Z",
+        "line": 6,
+        "name": "User Creates profile",
+        "description": "",
+        "id": "registration;user-creates-profile",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 278000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Get a 201 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:04:25.675Z",
+        "line": 15,
+        "name": "User is unable to create profile with password miss-match",
+        "description": "",
+        "id": "registration;user-is-unable-to-create-profile-with-password-miss-match",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988%%"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 273000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Response status: expected:\u003c400\u003e but was:\u003c201\u003e\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat steps.UserProfileSteps.userGetAResponse(UserProfileSteps.java:43)\n\tat ✽.User Get a 400 response(classpath:features/UserFeature.feature:20)\n",
+              "duration": 3000000,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "User Get a 400 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:04:25.998Z",
+        "line": 22,
+        "name": "User is unable to create profile without password",
+        "description": "",
+        "id": "registration;user-is-unable-to-create-profile-without-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "",
+                  "R4f43lC1988%%"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 161000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User Get a 400 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:04:26.190Z",
+        "line": 29,
+        "name": "User is unable to create profile without Username",
+        "description": "",
+        "id": "registration;user-is-unable-to-create-profile-without-username",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988%%",
+                  "R4f43lC1988%%"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User Get a 400 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:04:26.357Z",
+        "line": 36,
+        "name": "User is unable to create profile without password confirmation",
+        "description": "",
+        "id": "registration;user-is-unable-to-create-profile-without-password-confirmation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988%%",
+                  ""
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 295000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Response status: expected:\u003c400\u003e but was:\u003c201\u003e\n\tat org.junit.Assert.fail(Assert.java:89)\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\n\tat org.junit.Assert.assertEquals(Assert.java:647)\n\tat steps.UserProfileSteps.userGetAResponse(UserProfileSteps.java:43)\n\tat ✽.User Get a 400 response(classpath:features/UserFeature.feature:41)\n",
+              "duration": 2000000,
+              "status": "failed"
+            },
+            "line": 41,
+            "name": "User Get a 400 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:04:26.671Z",
+        "line": 43,
+        "name": "User is unable to create profile without Firstname",
+        "description": "",
+        "id": "registration;user-is-unable-to-create-profile-without-firstname",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "",
+                  "Castillo",
+                  "R4f43lC1988%%",
+                  "R4f43lC1988%%"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 173000000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "User Get a 400 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:04:26.855Z",
+        "line": 50,
+        "name": "User is unable to create profile without Lastname",
+        "description": "",
+        "id": "registration;user-is-unable-to-create-profile-without-lastname",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "",
+                  "R4f43lC1988%%",
+                  "R4f43lC1988%%"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User Get a 400 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:04:27.023Z",
+        "line": 57,
+        "name": "User is unable to create profile with same user name",
+        "description": "",
+        "id": "registration;user-is-unable-to-create-profile-with-same-user-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User singup with details",
+            "match": {
+              "location": "steps.UserProfileSteps.userSingupWithDetails(java.util.List\u003cdto.UserRequest\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 202000000,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "User Get a 201 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 118000000,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.UserProfileSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "User Get a 400 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.UserProfileSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "  AS a User\n  I want a create profile API\n  So that I can have access to my profile details",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "classpath:features/UserFeature.feature",
+    "tags": []
+  }
+]

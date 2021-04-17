@@ -1,0 +1,1132 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User Register",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1047000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User sing up with details",
+            "match": {
+              "location": "steps.RegistrationSteps.userSingUpWithDetails(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1023000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.RegistrationSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Get a 201 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.RegistrationSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:11:11.399Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1983000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User can login to buggy cars website",
+        "description": "",
+        "id": "login;user-can-login-to-buggy-cars-website",
+        "after": [
+          {
+            "result": {
+              "duration": 616000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.Finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2957000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User Login to Buggy cars website",
+            "match": {
+              "location": "steps.LoginSteps.userLoginToBuggyCarsWebsite()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 246000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is able to see his name on the top nav bar",
+            "match": {
+              "location": "steps.LoginSteps.userIsAbleToSeeHisNameOnTheTopNavBar()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User Register",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 714000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User sing up with details",
+            "match": {
+              "location": "steps.RegistrationSteps.userSingUpWithDetails(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 256000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.RegistrationSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Get a 201 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.RegistrationSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:11:26.526Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1794000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "User can not login to buggy cars website with wrong password",
+        "description": "",
+        "id": "login;user-can-not-login-to-buggy-cars-website-with-wrong-password",
+        "after": [
+          {
+            "result": {
+              "duration": 562000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.Finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2849000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User Login to Buggy cars website with wrong",
+            "match": {
+              "location": "steps.LoginSteps.userLoginToBuggyCarsWebsiteWithWrongPassword(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "wrongPassword"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1230000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User is presented with error message \"Invalid username/password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid username/password\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.LoginSteps.userIsPresentedWithErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User Register",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 741000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User sing up with details",
+            "match": {
+              "location": "steps.RegistrationSteps.userSingUpWithDetails(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 253000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.RegistrationSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Get a 201 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.RegistrationSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:11:40.634Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1821000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "User can not login to buggy cars website with wrong username",
+        "description": "",
+        "id": "login;user-can-not-login-to-buggy-cars-website-with-wrong-username",
+        "after": [
+          {
+            "result": {
+              "duration": 2521000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.Finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3177000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User Login to Buggy cars website with wrong",
+            "match": {
+              "location": "steps.LoginSteps.userLoginToBuggyCarsWebsiteWithWrongPassword(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username"
+                ]
+              },
+              {
+                "cells": [
+                  "wrongUserName"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1251000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User is presented with error message \"Invalid username/password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid username/password\"",
+                  "offset": 37
+                }
+              ],
+              "location": "steps.LoginSteps.userIsPresentedWithErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  As a User\n  I want a login component\n  So that I can access my profile details",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "classpath:features/Login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "User Register",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 745000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User sing up with details",
+            "match": {
+              "location": "steps.RegistrationSteps.userSingUpWithDetails(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 262000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.RegistrationSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Get a 201 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.RegistrationSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:11:57.893Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1748000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User updates profile name",
+        "description": "",
+        "id": "profile;user-updates-profile-name",
+        "after": [
+          {
+            "result": {
+              "duration": 2963000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.Finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2734000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User Login to Buggy cars website",
+            "match": {
+              "location": "steps.LoginSteps.userLoginToBuggyCarsWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 819000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User Navigates to profile",
+            "match": {
+              "location": "steps.ProfileSteps.userNavigatesToProfile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1413000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User updates",
+            "match": {
+              "location": "steps.ProfileSteps.userUpdates(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName"
+                ]
+              },
+              {
+                "cells": [
+                  "rafa"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 931000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User saves updated details",
+            "match": {
+              "location": "steps.ProfileSteps.userSavesUpdatedDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7550000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User can read a \"The profile has been saved successful\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The profile has been saved successful\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.RegistrationSteps.userCanReadAMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "User Register",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 692000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User sing up with details",
+            "match": {
+              "location": "steps.RegistrationSteps.userSingUpWithDetails(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 195000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User process the create profile request",
+            "match": {
+              "location": "steps.RegistrationSteps.userProcessTheCreateProfileRequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Get a 201 response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 11
+                }
+              ],
+              "location": "steps.RegistrationSteps.userGetAResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:12:23.817Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2928000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "User updates profile lastname",
+        "description": "",
+        "id": "profile;user-updates-profile-lastname",
+        "after": [
+          {
+            "result": {
+              "duration": 2701000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.Finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2939000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User Login to Buggy cars website",
+            "match": {
+              "location": "steps.LoginSteps.userLoginToBuggyCarsWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 681000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User Navigates to profile",
+            "match": {
+              "location": "steps.ProfileSteps.userNavigatesToProfile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1254000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User updates",
+            "match": {
+              "location": "steps.ProfileSteps.userUpdates(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "lastName"
+                ]
+              },
+              {
+                "cells": [
+                  "Mendoza"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 670000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User saves updated details",
+            "match": {
+              "location": "steps.ProfileSteps.userSavesUpdatedDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2771000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User can read a \"The profile has been saved successful\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The profile has been saved successful\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.RegistrationSteps.userCanReadAMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Profile",
+    "description": "  As a User\n  I want a profile form\n  So that I can update my profile details",
+    "id": "profile",
+    "keyword": "Feature",
+    "uri": "classpath:features/Profile.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-17T09:12:45.398Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1982000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "User can register to Buggy car",
+        "description": "",
+        "id": "registration;user-can-register-to-buggy-car",
+        "after": [
+          {
+            "result": {
+              "duration": 638000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.Finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1011000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User sing up with details",
+            "match": {
+              "location": "steps.RegistrationSteps.userSingUpWithDetails(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5906000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User submits form",
+            "match": {
+              "location": "steps.RegistrationSteps.userSubmitsForm()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2784000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User can read a \"Registration is successful\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Registration is successful\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.RegistrationSteps.userCanReadAMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:13:04.635Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1664000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User can not register to Buggy car with a miss-matching password",
+        "description": "",
+        "id": "registration;user-can-not-register-to-buggy-car-with-a-miss-matching-password",
+        "after": [
+          {
+            "result": {
+              "duration": 725000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.Finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 750000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User sing up with details",
+            "match": {
+              "location": "steps.RegistrationSteps.userSingUpWithDetails(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988%%"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3148000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User submits form",
+            "match": {
+              "location": "steps.RegistrationSteps.userSubmitsForm()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2559000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User can read a \"Passwords do not match\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Passwords do not match\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.RegistrationSteps.userCanReadAMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-17T09:13:24.125Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2369000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User can not register to Buggy car with using an existing user",
+        "description": "",
+        "id": "registration;user-can-not-register-to-buggy-car-with-using-an-existing-user",
+        "after": [
+          {
+            "result": {
+              "duration": 3084000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.Finish()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 828000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User sing up with details",
+            "match": {
+              "location": "steps.RegistrationSteps.userSingUpWithDetails(java.util.List\u003cdto.User\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "firstName",
+                  "lastName",
+                  "password",
+                  "confirmPassword"
+                ]
+              },
+              {
+                "cells": [
+                  "rafcasto",
+                  "Rafael",
+                  "Castillo",
+                  "R4f43lC1988$$",
+                  "R4f43lC1988$$"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10006000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User submits form",
+            "match": {
+              "location": "steps.RegistrationSteps.userSubmitsForm()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3440000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User can read a \"Registration is successful\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Registration is successful\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.RegistrationSteps.userCanReadAMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8412000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User submits form",
+            "match": {
+              "location": "steps.RegistrationSteps.userSubmitsForm()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2828000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User can read a \"UsernameExistsException: User already exists\" message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UsernameExistsException: User already exists\"",
+                  "offset": 16
+                }
+              ],
+              "location": "steps.RegistrationSteps.userCanReadAMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "  As a User\n  I want a Registration Form\n  So that I can rate cars in Buggy car website",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "classpath:features/Registration.feature",
+    "tags": []
+  }
+]
